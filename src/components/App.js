@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Header from './components/header';
-import Reminders from './components/reminders';
-import AddReminder from './components/addReminder';
+import Header from './header';
+import Reminders from './reminders';
+import AddReminder from './addReminder';
 import {connect} from 'react-redux';
-import {addReminder, clearReminders, deleteReminder} from './actions/reminderAction';
+import {addReminder, clearReminders, deleteReminder} from '../actions/reminderAction';
 import './App.css';
 
 class App extends Component {

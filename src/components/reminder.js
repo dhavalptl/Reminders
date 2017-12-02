@@ -7,9 +7,7 @@ class Reminder extends Component {
     }
     render() {
         const {reminderText, reminderDate} = this.props.reminder;
-        console.log(this.props);
         const fromNowText = (reminderDate) ? moment(reminderDate).fromNow(): '';
-        console.log("Date ", fromNowText);
         return (
             <li className="listItem noradious">
                 <div className="listItemText">

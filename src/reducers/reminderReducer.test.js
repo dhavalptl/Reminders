@@ -9,27 +9,36 @@ describe('reminder reducers', () => {
     it('should add reminder', () => {
         expect(reminderReducer([], {
             type: ADD_REMINDER,
-            payload: 'Buy Paneer'
+            payload: {
+                reminderText: 'Buy Paneer',
+                reminderDate: '2017-12-02'
+            }
         }).length === 1);
     });
 
     it('should add one more reminder', () => {
         expect(reminderReducer([{
             id: 123,
-            text: 'Testing items'
+            reminderText: 'Buy Paneer',
+            reminderDate: '2017-12-02'
         }], {
             type: ADD_REMINDER,
-            payload: 'Buy Paneer'
+            payload: {
+                reminderText: 'Buy Bread',
+                reminderDate: '2017-12-03'
+            }
         }).length === 2);
     });
 
     it('should delete reminder', () => {
         expect(reminderReducer([{
             id: 123,
-            text: 'Testing items'
+            reminderText: 'Buy Paneer',
+            reminderDate: '2017-12-02'
         },{
             id: 124,
-            text: 'Testing items2'
+            reminderText: 'Buy Bread',
+            reminderDate: '2017-12-02'
         }], {
             type: DELETE_REMINDER,
             payload: 123
@@ -39,10 +48,12 @@ describe('reminder reducers', () => {
     it('should clear all reminders', () => {
         expect(reminderReducer([{
             id: 123,
-            text: 'Testing items'
+            reminderText: 'Buy Paneer',
+            reminderDate: '2017-12-02'
         },{
             id: 124,
-            text: 'Testing items2'
+            reminderText: 'Buy Bread',
+            reminderDate: '2017-12-02'
         }], {
             type: CLEAR_REMINDERS
         }).length === 0);

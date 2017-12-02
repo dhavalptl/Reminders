@@ -7,7 +7,6 @@ class Reminders extends Component {
     }
     render() {
         const {reminders} = this.props;
-        console.log(reminders);
         if(reminders.length === 0){
             return (
                 <div className="card content noradious">

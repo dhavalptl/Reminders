@@ -1,28 +1,30 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
 import Header from './header';
 
 describe('Test for <Header /> component', () => {
-    let wrapper;
-    const props = {
-        handleClearReminders: jest.fn()
-    };
+    const setup = () => {
+        const props = {
+            handleClearReminders: jest.fn()
+        };
+        const wrapper = shallow(<Header {...props}/>);
+        return {wrapper, props};
+    }
    it('should render correctly', () => {
-        wrapper = shallow(<Header/>);
+       const {wrapper} = setup();
         expect(wrapper.length).toBe(1);
     });
     it('should have title', () => {
-        wrapper = shallow(<Header/>);
+        const {wrapper} = setup();
         expect(wrapper.find('.title').text()).toBe('Reminders');
     });
     it('should have clear reminders', () => {
-        wrapper = shallow(<Header/>);
+        const {wrapper} = setup();
         expect(wrapper.find('.clearReminder').text()).toBe('Clear Reminders');
     });
 
     it('should click clear reminders', () => {
-        wrapper = shallow(<Header {...props}/>);
+        const {wrapper, props} = setup();
         wrapper.find('button').simulate('click');
         //wrapper.find('button').prop('onClick')();
         expect(props.handleClearReminders.mock.calls.length).toBe(1);

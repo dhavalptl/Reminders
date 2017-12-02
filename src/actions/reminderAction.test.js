@@ -3,12 +3,20 @@ import {addReminder, clearReminders, deleteReminder} from './reminderAction';
 
 describe('addReminder', () => {
     it('should create an action to add reminder', () => {
-        const text = 'Buy Fund';
+        const reminder = {
+            id: 123,
+            reminderText: 'Buy Paneer',
+            reminderDate: '2017-12-02'
+        };
         const expectedAction = {
             type: ADD_REMINDER,
-            payload: text
+            payload: {
+                id: 123,
+                reminderText: 'Buy Paneer',
+                reminderDate: '2017-12-02'
+            }
         };
-        expect(addReminder(text)).toEqual(expectedAction);
+        expect(addReminder(reminder)).toEqual(expectedAction);
     });
 });
 
