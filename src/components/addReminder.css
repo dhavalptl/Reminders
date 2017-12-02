@@ -1,0 +1,48 @@
+.inputs{
+    height: 50px;
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-direction: row;
+    background: lightgoldenrodyellow;
+  }
+  
+  .addInput{
+    flex: 1;
+    border-radius: 0px;
+    border: 0px;
+    font-weight: 100;
+    font-size: 0.8em;
+  }
+  
+  .dateInput{
+    width: 160px;
+    border-radius: 0px;
+    border: 0px;
+    border-left: 1px;
+    border-left-color: lightgray;
+    border-left-style: solid;
+    border-right: 1px;
+    border-right-color: lightgray;
+    border-right-style: solid;
+    font-weight: 100;
+    font-size: 0.9em;
+  }
+  
+  .timeInput{
+    width: 130px;
+    border-radius: 0px;
+    border: 0px;
+    border-right: 1px;
+    border-right-color: lightgray;
+    border-right-style: solid;
+    font-weight: 100;
+    font-size: 0.9em;
+  }
+  
+  .addIcon{
+    width: 70px;
+    font-size: 1em;
+    font-weight: 800;
+    border-radius: 0px;
+    border: 1px solid lightgray;
+  }

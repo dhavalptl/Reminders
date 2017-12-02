@@ -1,0 +1,36 @@
+.listItem{
+    height: 50px;
+    display: flex;
+    font-size: 0.9em;
+    flex-direction: row;
+    border-bottom: 1px;
+    border-bottom-color: lightgray;
+    border-bottom-style: solid;
+    align-items: center;
+}
+
+.listItemText{
+    flex: 1;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reminderText{
+    flex: 1;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.fromNowText{
+    flex: 1;
+    font-size: .8em;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.deleteBtn{
+    width: 30px;
+    font-weight: 800;
+    cursor: pointer;
+}

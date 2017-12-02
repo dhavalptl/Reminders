@@ -1,0 +1,23 @@
+.header{
+    height: 50px;
+    display: flex;
+    background: lightgray;
+    border: 1px solid lightgrey; 
+    flex-direction: row;
+    border-radius: 0px;    
+}
+
+.title{
+    flex:1;
+    align-self: left;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 0px;
+}
+
+.clearReminder{
+    width: 150px;
+    border-radius: 0px;
+    font-weight: 100;
+    margin: 3px;
+}

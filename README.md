@@ -1,0 +1,1 @@
+Reminder App using React and Redux. And testing using jest and enzyme.
