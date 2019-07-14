@@ -1,4 +1,4 @@
-import {ADD_REMINDER, CLEAR_REMINDERS, DELETE_REMINDER} from '../constants';
+/*import {ADD_REMINDER, CLEAR_REMINDERS, DELETE_REMINDER} from '../constants';
 import {addReminder, clearReminders, deleteReminder} from './reminderAction';
 
 describe('addReminder', () => {
@@ -38,4 +38,4 @@ describe('clearReminders', () => {
         };
         expect(clearReminders()).toEqual(expectedAction);
     });
-});
+});*/

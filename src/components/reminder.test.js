@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { shallow } from 'enzyme';
 import Reminder from './reminder';
 
@@ -48,4 +48,4 @@ describe('Test for <Reminder /> component', () => {
         wrapper.instance().onDeleteReminder();
         expect(props.handleDeleteReminder.mock.calls.length).toBe(1);
     });
-});
+});*/

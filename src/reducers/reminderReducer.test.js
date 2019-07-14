@@ -1,4 +1,4 @@
-import reminderReducer from './reminderReducer';
+/*import reminderReducer from './reminderReducer';
 import {ADD_REMINDER, CLEAR_REMINDERS, DELETE_REMINDER} from '../constants';
 
 describe('reminder reducers', () => {
@@ -58,4 +58,4 @@ describe('reminder reducers', () => {
             type: CLEAR_REMINDERS
         }).length === 0);
     });
-});
+});*/
